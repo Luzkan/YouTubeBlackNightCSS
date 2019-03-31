@@ -1,5 +1,5 @@
 /* Made & Compiled by Marcel "Luzkan" Jerzyk 
-   [30.03.2019]          Initial Update v1.0 
+   [31.03.2019]          Initial Update v1.01 
    `Black, Dark & Night are the true themes` */
 
 :root {
@@ -50,115 +50,115 @@ ytd-page-manager > *.ytd-page-manager {
 
 
 /* New Scrollbar */
-  ::-webkit-scrollbar,
-  ::-webkit-scrollbar-corner {
-    background: #ddd;
-    width: 14px;
-    height: 14px;
-  }
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #aaa;
-  }
-  ::-webkit-scrollbar-thumb:not(:active):hover {
-    background: #afafaf;
-  }
-  ::-webkit-scrollbar-thumb:active,
-  ::-webkit-scrollbar-thumb:hover:active {
-    background: #bbb;
-  }
-  [dark]::-webkit-scrollbar,
-  [dark]::-webkit-scrollbar-corner,
-  [dark] ::-webkit-scrollbar,
-  [dark] ::-webkit-scrollbar-corner {
-    background: #040406 !important;
-  }
-  [dark]::-webkit-scrollbar-button,
-  [dark] ::-webkit-scrollbar-button {
-    display: none;
-  }
-  [dark]::-webkit-scrollbar-thumb,
-  [dark] ::-webkit-scrollbar-thumb {
-    background: #333;
-  }
-  [dark]::-webkit-scrollbar-thumb:not(:active):hover,
-  [dark] ::-webkit-scrollbar-thumb:not(:active):hover {
-    background: #383838;
-  }
-  [dark]::-webkit-scrollbar-thumb:active,
-  [dark]::-webkit-scrollbar-thumb:hover:active,
-  [dark] ::-webkit-scrollbar-thumb:active,
-  [dark] ::-webkit-scrollbar-thumb:hover:active {
-    background: #5c5c5c;
-  }
+::-webkit-scrollbar,
+::-webkit-scrollbar-corner {
+background: #ddd;
+width: 14px;
+height: 14px;
+}
+::-webkit-scrollbar-button {
+display: none;
+}
+::-webkit-scrollbar-thumb {
+background: #aaa;
+}
+::-webkit-scrollbar-thumb:not(:active):hover {
+background: #afafaf;
+}
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:hover:active {
+background: #bbb;
+}
+[dark]::-webkit-scrollbar,
+[dark]::-webkit-scrollbar-corner,
+[dark] ::-webkit-scrollbar,
+[dark] ::-webkit-scrollbar-corner {
+background: #040406 !important;
+}
+[dark]::-webkit-scrollbar-button,
+[dark] ::-webkit-scrollbar-button {
+display: none;
+}
+[dark]::-webkit-scrollbar-thumb,
+[dark] ::-webkit-scrollbar-thumb {
+background: #333;
+}
+[dark]::-webkit-scrollbar-thumb:not(:active):hover,
+[dark] ::-webkit-scrollbar-thumb:not(:active):hover {
+background: #383838;
+}
+[dark]::-webkit-scrollbar-thumb:active,
+[dark]::-webkit-scrollbar-thumb:hover:active,
+[dark] ::-webkit-scrollbar-thumb:active,
+[dark] ::-webkit-scrollbar-thumb:hover:active {
+background: #5c5c5c;
+}
 
-  /* Subbutton after Subscribed */
-  paper-button.ytd-subscribe-button-renderer[subscribed] .deemphasize.yt-formatted-string,
-  paper-button.ytd-subscribe-button-renderer[subscribed] {
-    color: var(--yt-subscribe-button-text-color);
-  }
-  paper-button.ytd-subscribe-button-renderer[subscribed] {
-    background-color: var(--SubscribeButtonAfterSub);
-  }
-  ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer {
-    background-color: var(--SubscribeButtonAfterSub);
-    color: var(--yt-subscribe-button-text-color);
-  }
-  
-  /* Vars */
-  :not([style-scope]):not(.style-scope) {
-    --ytd-masthead-height: 64px; /* default: 56px */
-  }
-  
-  /* Page Progress */
-  yt-page-navigation-progress, #progress.yt-page-navigation-progress {
-    height: 4px;
-  }
-  yt-page-navigation-progress {
-    background-color: transparent;
-  }
-  
-  /* Masterhead (YouTube upper navbar) */
-  #container.ytd-masthead {
-    height: 64px;
-  }
-  ytd-searchbox.ytd-masthead {
-    justify-content: center !important;
-  }
-  #search-form.ytd-searchbox {
-    height: 38px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    transition: box-shadow .2s var(--standard-curve);
-  }
-  [has-focus] #search-form.ytd-searchbox {
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
-  }
-  #container.ytd-searchbox,
-  #search-icon-legacy.ytd-searchbox {
-    background: var(--yt-searchbox-background) !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-  ytd-searchbox input {
-    margin-left: 8px;
-  }
+/* Subbutton after Subscribed */
+paper-button.ytd-subscribe-button-renderer[subscribed] .deemphasize.yt-formatted-string,
+paper-button.ytd-subscribe-button-renderer[subscribed] {
+color: var(--yt-subscribe-button-text-color);
+}
+paper-button.ytd-subscribe-button-renderer[subscribed] {
+background-color: var(--SubscribeButtonAfterSub);
+}
+ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer {
+background-color: var(--SubscribeButtonAfterSub);
+color: var(--yt-subscribe-button-text-color);
+}
 
-  /* GUIDE */
-  #header.ytd-app {
-    height: 64px;
-  }
+/* Vars */
+:not([style-scope]):not(.style-scope) {
+--ytd-masthead-height: 64px; /* default: 56px */
+}
 
-  /* TOGGLE */
-  .toggle-bar.paper-toggle-button {
-    opacity: 0.3 !important;
-  }
+/* Page Progress */
+yt-page-navigation-progress, #progress.yt-page-navigation-progress {
+height: 4px;
+}
+yt-page-navigation-progress {
+background-color: transparent;
+}
 
-  paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
-    opacity: 0.7 !important;
-  }
+/* Masterhead (YouTube upper navbar) */
+#container.ytd-masthead {
+height: 64px;
+}
+ytd-searchbox.ytd-masthead {
+justify-content: center !important;
+}
+#search-form.ytd-searchbox {
+height: 38px;
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+transition: box-shadow .2s var(--standard-curve);
+}
+[has-focus] #search-form.ytd-searchbox {
+box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#container.ytd-searchbox,
+#search-icon-legacy.ytd-searchbox {
+background: var(--yt-searchbox-background) !important;
+border: none !important;
+border-radius: 0 !important;
+box-shadow: none !important;
+}
+ytd-searchbox input {
+margin-left: 8px;
+}
+
+/* Guide */
+#header.ytd-app {
+height: 64px;
+}
+
+/* Toggle  */
+.toggle-bar.paper-toggle-button {
+opacity: 0.3 !important;
+}
+
+paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
+opacity: 0.7 !important;
+}
 
 
 /* Edits */
@@ -333,8 +333,8 @@ html[dark] {
    background: var(--MainColor) !important; 
 }
 .ytp-volume-slider-track, .ytp-volume-slider-handle:before {
-   background: var(--MainProgressColor) !important;
-   z-index: -117;
+   background: var(--MainColor) !important;
+   z-index: -1;
 }
 .ytp-settings-button.ytp-hd-quality-badge::after, .ytp-settings-button.ytp-4k-quality-badge::after, .ytp-settings-button.ytp-5k-quality-badge::after, .ytp-settings-button.ytp-8k-quality-badge::after, .ytp-settings-button.ytp-3d-badge::after {
    background-color: var(--MainProgressColor) !important;
@@ -378,7 +378,6 @@ paper-button.ytd-subscribe-button-renderer, ytd-button-renderer.style-primary[is
 }  
 
 /* Font */
-
  .badge-style-type-live-now.ytd-badge-supported-renderer span, yt-formatted-string.ytd-comments-header-renderer, paper-button, .more-button.ytd-comment-renderer, .less-button.ytd-comment-renderer, yt-icon, .yt-icon-container.yt-icon, .guide-entry-count.ytd-guide-entry-renderer, a.yt-simple-endpoint.yt-formatted-string, .content.ytd-metadata-row-renderer, paper-menu, #toggle.ytd-grid-renderer, .tab-content.paper-tab, #channel-title.ytd-c4-tabbed-header-renderer, #subscriber-count.ytd-c4-tabbed-header-renderer, #title.ytd-vertical-channel-section-renderer, #video-title.ytd-compact-playlist-renderer, #video-title.ytd-playlist-panel-video-renderer, .video-title.ytd-watch-card-video-list-renderer, #video-title.ytd-playlist-renderer, #video-title.ytd-compact-radio-renderer, #unplayableText.ytd-playlist-panel-video-renderer, .subheadline.ytd-channel-about-metadata-renderer, #title.ytd-sub-feed-selector-renderer, yt-formatted-string.ytd-sub-feed-option-renderer, #index.ytd-playlist-video-renderer, #title.ytd-modal-with-title-and-button-renderer, #share-label.yt-sharing-renderer, #close-panel-icon.ytd-sharing-embed-renderer:hover, [button-renderer].ytd-menu-renderer:hover yt-icon.ytd-menu-renderer, #button.ytd-menu-renderer:hover yt-icon.ytd-menu-renderer, #filter-group-name.ytd-search-filter-group-renderer, ytd-search-filter-renderer.selected yt-formatted-string.ytd-search-filter-renderer, #header.ytd-add-to-playlist-renderer, #creator-sidebar .creator-sidebar-section a:hover, #primary-content.yt-live-chat-header-renderer, .yt-live-chat-message-input-renderer-0 #author-name.yt-live-chat-message-input-renderer, .yt-button-renderer-0.style-dark[is-paper-button], #author-name.yt-live-chat-message-input-renderer, yt-formatted-string.yt-emoji-picker-category-renderer, .ytd-video-meta-block, #name.ytd-author-comment-badge-renderer, #title.ytd-movie-upsell-renderer, #title.yt-report-form-modal-renderer, a.yt-simple-endpoint.yt-formatted-string:visited, .title.ytd-playlist-panel-renderer, #related-header.ytd-generic-watch-card, #publisher-container > yt-formatted-string > a, #title.ytd-rich-list-header-renderer, .content.ytd-metadata-row-header-renderer, #to-field-header.ytd-contact-search-renderer, #text.ytd-sender-id-section-renderer, yt-formatted-string.ytd-start-at-renderer, #share-url.ytd-copy-link-renderer, #title.ytd-share-target-renderer, a.yt-simple-endpoint.yt-formatted-string:only-of-type:visited, .question.ytd-generic-faq-question-renderer, .title.ytd-purchase-item-renderer, #text.yt-bubble-hint-renderer, #video-title.ytd-grid-movie-renderer, ytd-grid-playlist-renderer #video-title.ytd-grid-playlist-renderer a, #author-name.yt-live-chat-author-chip, #title.ytd-rich-metadata-renderer, #card-title.ytd-search-refinement-card-renderer, .more-button.ytd-comment-history-entry-renderer, .less-button.ytd-comment-history-entry-renderer, #author-text.yt-simple-endpoint.ytd-backstage-post-renderer, ytd-video-renderer[is-backstage-video] #video-title.ytd-video-renderer, .more-button.ytd-backstage-post-renderer, .less-button.ytd-backstage-post-renderer, #title.ytd-item-section-header-renderer, yt-live-chat-text-message-renderer[author-is-owner] #message.yt-live-chat-text-message-renderer, #title.ytd-add-to-playlist-renderer, #info.ytd-movie-offer-module-renderer, .title.ytd-comment-video-thumbnail-header-renderer, .input-content.label-is-floating.paper-input-container .label-and-input-container.paper-input-container > [slot="label"], paper-input-char-counter {
   color: #aaa;
 }
@@ -408,7 +407,7 @@ h3.ytd-grid-video-renderer a, ytd-guide-entry-renderer[active] .guide-icon.ytd-g
   color: var(--MainAccentColor);
 }
 
-#subtitle.ytd-shelf-renderer, #result-count.ytd-search-sub-menu-renderer, span.yt-view-count-renderer, .date.ytd-video-secondary-info-renderer, .content.ytd-video-secondary-info-renderer, #icon-label.yt-dropdown-menu, #content-text.ytd-comment-renderer, *:not([style-scope]):not(.style-scope), #button.ytd-menu-renderer yt-icon.ytd-menu-renderer, yt-icon.ytd-badge-supported-renderer, .title.ytd-guide-entry-renderer, ytd-searchbox[mode=legacy] #container.ytd-searchbox input.ytd-searchbox, ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer, ytd-button-renderer.force-icon-button a.ytd-button-renderer, #scroller.yt-confirm-dialog-renderer, #title.yt-confirm-dialog-renderer, yt-button-renderer #button.yt-button-renderer, .input-content.paper-input-container  textarea, #text:hover, yt-formatted-string.ytd-menu-service-item-renderer, .item.yt-dropdown-menu, .title.ytd-mini-channel-renderer, ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer yt-formatted-string, #label-text.yt-dropdown-menu, .input-content.paper-input-container input, .index-message.ytd-playlist-panel-renderer, #byline.ytd-playlist-panel-video-renderer, #subscribers, #description.ytd-channel-renderer, #button.ytd-toggle-button-renderer yt-icon.ytd-toggle-button-renderer + yt-formatted-string.ytd-toggle-button-renderer, #video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer, #thumbnail-attribution.ytd-grid-channel-renderer, #description.ytd-channel-about-metadata-renderer, #right-column.ytd-channel-about-metadata-renderer > yt-formatted-string.ytd-channel-about-metadata-renderer, .content.ytd-comment-history-entry-renderer, #message.ytd-message-renderer, #stats.ytd-playlist-sidebar-primary-info-renderer, yt-formatted-string.content.ytd-channel-video-player-renderer, yt-formatted-string.ytd-guide-signin-promo-renderer, #content.ytd-modal-with-title-and-button-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.ytd-sharing-embed-renderer, #close-panel-icon.ytd-sharing-embed-renderer, #privacy-mode-info.ytd-sharing-embed-renderer, #legal-info.ytd-sharing-embed-renderer, ytd-search-filter-renderer yt-formatted-string.ytd-search-filter-renderer, ytd-search-filter-renderer.selected #dismiss-x.ytd-search-filter-renderer, yt-icon.ytd-playlist-add-to-option-renderer, #label.ytd-playlist-add-to-option-renderer, #label.ytd-compact-link-renderer, .content-text.ytd-metadata-with-image-row-renderer, yt-formatted-string.yt-sharing-renderer, #label.ytd-toggle-theme-compact-link-renderer, #email.ytd-active-account-header-renderer, #text.ytd-notification-multi-action-renderer, ytd-video-meta-block:not(.grid):not(.compact).byline-separated #separator.ytd-video-meta-block, [meta-block].ytd-video-meta-block:not(.grid):not(.compact).byline-separated #separator.ytd-video-meta-block, #search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox, .message.ytd-notification-renderer, #creator-sidebar .creator-sidebar-section a, .description.ytd-toggle-item-renderer, .yt-live-chat-text-message-renderer-1 #message.yt-live-chat-text-message-renderer, .yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-icon-toggle-button-renderer-0 paper-icon-button.yt-live-chat-icon-toggle-button-renderer, .yt-live-chat-message-input-renderer-0 #count.yt-live-chat-message-input-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer, .ytd-menu-service-item-renderer-0 yt-formatted-string.ytd-menu-service-item-renderer, .ytd-menu-navigation-item-renderer-0 yt-formatted-string.ytd-menu-navigation-item-renderer, .yt-live-chat-participant-list-renderer-0 #back-button.yt-live-chat-participant-list-renderer, .yt-live-chat-participant-list-renderer-0, .yt-live-chat-participant-renderer-0 #author-name.yt-live-chat-participant-renderer, .yt-live-chat-renderer-0, #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer, #all.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer, #metadata.ytd-channel-renderer, #corrected.yt-search-query-correction, #corrected-link.yt-search-query-correction, #original.yt-search-query-correction, #original-link.yt-search-query-correction, #original.yt-search-query-correction, #message.yt-live-chat-text-message-renderer, #input.yt-live-chat-text-input-field-renderer, .yt-live-chat-renderer, #close-button.yt-live-chat-message-buy-flow-renderer, #info.yt-live-chat-message-buy-flow-renderer, yt-formatted-string.ytd-expanded-shelf-contents-renderer, body:not([dark]) #search, #middle-metadata-section.ytd-movie-upsell-renderer, .metadata-value.ytd-movie-upsell-renderer, yt-formatted-string.yt-options-renderer, .publisher.ytd-playlist-panel-renderer, #vote-count-left.ytd-comment-action-buttons-renderer, #vote-count-middle.ytd-comment-action-buttons-renderer, #responses.ytd-feedback-elicitation-single-question-renderer yt-formatted-string.ytd-feedback-elicitation-single-question-renderer, #question.ytd-feedback-elicitation-single-question-renderer, .related-entity-title.ytd-generic-watch-card, #container > yt-formatted-string > a, #title.ytd-channel-featured-content-renderer, #title.ytd-compact-channel-recommendation-card-renderer, #title.ytd-recent-shares-section-renderer, #title.ytd-contact-section-renderer, #start-at-timestamp.ytd-start-at-renderer, textarea.iron-autogrow-textarea, #last-post.ytd-conversation-switcher-item-renderer, #timestamp.ytd-conversation-switcher-item-renderer, #message.yt-live-chat-viewer-engagement-message-renderer, #subtitle.ytd-compact-link-renderer, #subtitle.yt-dropdown-menu,.duration.ytd-watch-card-compact-video-renderer, ytd-background-promo-renderer[renderer-style="full-height"] .promo-title.ytd-background-promo-renderer, #description.yt-music-pass-small-feature-info-renderer, .text.ytd-simple-text-section-renderer, .answer.ytd-generic-faq-question-renderer, .price-text.ytd-purchase-item-renderer, .page_photo.page_action_menu_groups .page_actions_item, span.help_table_question_act.help_table_question_act_ok, span.help_table_question_act.help_table_question_act_do, #view-more.ytd-grid-playlist-renderer a, #description-text.ytd-video-renderer, ytd-commentbox:not([is-backstage-post]) yt-formatted-string#contenteditable-textarea.ytd-commentbox, .badge-style-type-medium-grey.ytd-badge-supported-renderer, #content-text.ytd-backstage-post-renderer, yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:hover, ytd-post-renderer[surface_="backstage-surface-type-home"] #home-content-text.ytd-post-renderer, yt-formatted-string.ytd-notification-text-renderer {
+#subtitle.ytd-shelf-renderer, #result-count.ytd-search-sub-menu-renderer, span.yt-view-count-renderer, .date.ytd-video-secondary-info-renderer, .content.ytd-video-secondary-info-renderer, #icon-label.yt-dropdown-menu, #content-text.ytd-comment-renderer, *:not([style-scope]):not(.style-scope), #button.ytd-menu-renderer yt-icon.ytd-menu-renderer, yt-icon.ytd-badge-supported-renderer, .title.ytd-guide-entry-renderer, ytd-searchbox[mode=legacy] #container.ytd-searchbox input.ytd-searchbox, ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer, ytd-button-renderer.force-icon-button a.ytd-button-renderer, #scroller.yt-confirm-dialog-renderer, #title.yt-confirm-dialog-renderer, yt-button-renderer #button.yt-button-renderer, .input-content.paper-input-container  textarea, #text:hover, yt-formatted-string.ytd-menu-service-item-renderer, .item.yt-dropdown-menu, .title.ytd-mini-channel-renderer, ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer yt-formatted-string, #label-text.yt-dropdown-menu, .input-content.paper-input-container input, .index-message.ytd-playlist-panel-renderer, #byline.ytd-playlist-panel-video-renderer, #subscribers, #description.ytd-channel-renderer, #button.ytd-toggle-button-renderer yt-icon.ytd-toggle-button-renderer + yt-formatted-string.ytd-toggle-button-renderer, #video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer, #thumbnail-attribution.ytd-grid-channel-renderer, #description.ytd-channel-about-metadata-renderer, #right-column.ytd-channel-about-metadata-renderer > yt-formatted-string.ytd-channel-about-metadata-renderer, .content.ytd-comment-history-entry-renderer, #message.ytd-message-renderer, #stats.ytd-playlist-sidebar-primary-info-renderer, yt-formatted-string.content.ytd-channel-video-player-renderer, yt-formatted-string.ytd-guide-signin-promo-renderer, #content.ytd-modal-with-title-and-button-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.ytd-sharing-embed-renderer, #close-panel-icon.ytd-sharing-embed-renderer, #privacy-mode-info.ytd-sharing-embed-renderer, #legal-info.ytd-sharing-embed-renderer, ytd-search-filter-renderer yt-formatted-string.ytd-search-filter-renderer, ytd-search-filter-renderer.selected #dismiss-x.ytd-search-filter-renderer, yt-icon.ytd-playlist-add-to-option-renderer, #label.ytd-playlist-add-to-option-renderer, #label.ytd-compact-link-renderer, .content-text.ytd-metadata-with-image-row-renderer, yt-formatted-string.yt-sharing-renderer, #label.ytd-toggle-theme-compact-link-renderer, #email.ytd-active-account-header-renderer, #text.ytd-notification-multi-action-renderer, ytd-video-meta-block:not(.grid):not(.compact).byline-separated #separator.ytd-video-meta-block, [meta-block].ytd-video-meta-block:not(.grid):not(.compact).byline-separated #separator.ytd-video-meta-block, #search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox, .message.ytd-notification-renderer, #creator-sidebar .creator-sidebar-section a, .description.ytd-toggle-item-renderer, .yt-live-chat-text-message-renderer-1 #message.yt-live-chat-text-message-renderer, .yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-icon-toggle-button-renderer-0 paper-icon-button.yt-live-chat-icon-toggle-button-renderer, .yt-live-chat-message-input-renderer-0 #count.yt-live-chat-message-input-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer, .ytd-menu-service-item-renderer-0 yt-formatted-string.ytd-menu-service-item-renderer, .ytd-menu-navigation-item-renderer-0 yt-formatted-string.ytd-menu-navigation-item-renderer, .yt-live-chat-participant-list-renderer-0 #back-button.yt-live-chat-participant-list-renderer, .yt-live-chat-participant-list-renderer-0, .yt-live-chat-participant-renderer-0 #author-name.yt-live-chat-partichpant-renderer, .yt-live-chat-renderer-0, #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer, #all.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer, #metadata.ytd-channel-renderer, #corrected.yt-search-query-correction, #corrected-link.yt-search-query-correction, #original.yt-search-query-correction, #original-link.yt-search-query-correction, #original.yt-search-query-correction, #message.yt-live-chat-text-message-renderer, #input.yt-live-chat-text-input-field-renderer, .yt-live-chat-renderer, #close-button.yt-live-chat-message-buy-flow-renderer, #info.yt-live-chat-message-buy-flow-renderer, yt-formatted-string.ytd-expanded-shelf-contents-renderer, body:not([dark]) #search, #middle-metadata-section.ytd-movie-upsell-renderer, .metadata-value.ytd-movie-upsell-renderer, yt-formatted-string.yt-options-renderer, .publisher.ytd-playlist-panel-renderer, #vote-count-left.ytd-comment-action-buttons-renderer, #vote-count-middle.ytd-comment-action-buttons-renderer, #responses.ytd-feedback-elicitation-single-question-renderer yt-formatted-string.ytd-feedback-elicitation-single-question-renderer, #question.ytd-feedback-elicitation-single-question-renderer, .related-entity-title.ytd-generic-watch-card, #container > yt-formatted-string > a, #title.ytd-channel-featured-content-renderer, #title.ytd-compact-channel-recommendation-card-renderer, #title.ytd-recent-shares-section-renderer, #title.ytd-contact-section-renderer, #start-at-timestamp.ytd-start-at-renderer, textarea.iron-autogrow-textarea, #last-post.ytd-conversation-switcher-item-renderer, #timestamp.ytd-conversation-switcher-item-renderer, #message.yt-live-chat-viewer-engagement-message-renderer, #subtitle.ytd-compact-link-renderer, #subtitle.yt-dropdown-menu,.duration.ytd-watch-card-compact-video-renderer, ytd-background-promo-renderer[renderer-style="full-height"] .promo-title.ytd-background-promo-renderer, #description.yt-music-pass-small-feature-info-renderer, .text.ytd-simple-text-section-renderer, .answer.ytd-generic-faq-question-renderer, .price-text.ytd-purchase-item-renderer, .page_photo.page_action_menu_groups .page_actions_item, span.help_table_question_act.help_table_question_act_ok, span.help_table_question_act.help_table_question_act_do, #view-more.ytd-grid-playlist-renderer a, #description-text.ytd-video-renderer, ytd-commentbox:not([is-backstage-post]) yt-formatted-string#contenteditable-textarea.ytd-commentbox, .badge-style-type-medium-grey.ytd-badge-supported-renderer, #content-text.ytd-backstage-post-renderer, yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:hover, ytd-post-renderer[surface_="backstage-surface-type-home"] #home-content-text.ytd-post-renderer, yt-formatted-string.ytd-notification-text-renderer {
   color: var(--IconsTextColor);
 }
 
@@ -453,26 +452,16 @@ h3.ytd-grid-video-renderer a, ytd-guide-entry-renderer[active] .guide-icon.ytd-g
  }
 
 /* Background */
-
 #progress.ytd-thumbnail-overlay-resume-playback-renderer, paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button, #like-bar.ytd-sentiment-bar-renderer, #progress.yt-page-navigation-progress, ytd-sentiment-bar-renderer[activated_] #like-bar.ytd-sentiment-bar-renderer {
   background-color: var(--MainColor);
 }
 
-/* Badges and etc., could be MainColor/MainAccentColor or default, depending on preference 
+/* Badges and etc., could be MainColor/MainAccentColor or default, depending on preference */
 
+/*
 ytd-author-comment-badge-renderer, yt-report-form-modal-renderer[dialog][dialog][dialog], .ytp-ce-expanding-overlay-background, .yt-ui-ellipsis, paper-listbox#items, paper-listbox#menu, ytd-masthead.shell, #container.ytd-searchbox, yt-page-navigation-progress, .arrow.ytd-horizontal-card-list-renderer, [arrow].ytd-horizontal-card-list-renderer, paper-dialog, .scroll-button.ytd-third-party-share-target-section-renderer, .scroll-button.ytd-connection-section-renderer, #bar.ytd-copy-link-renderer, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox, .tickets_reply_row.clear_fix, .tickets_header, .tickets_reply_rows, .page_block_header.clear_fix, .tickets_suggest, .tickets_suggests_all_results, ytd-rich-metadata-renderer, ytd-post-renderer[surface_="backstage-surface-type-home"],.badge-style-type-simple.ytd-badge-supported-renderer, #contents.ytd-movie-offer-module-renderer   {
   background-color: var(none);
 }
-
 */
 
 
-/* Subbuttons 
-paper-button.ytd-subscribe-button-renderer[subscribed] {
-background-color: var(--SubscribeButtonAfterSub);
-}
-
-paper-button.ytd-subscribe-button-renderer {
-    background-color: var(--SubscribeButtonBeforeSub);
-}
-*/
