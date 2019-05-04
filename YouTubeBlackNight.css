@@ -1,6 +1,6 @@
 /* Made & Compiled by Marcel "Luzkan" Jerzyk 
-   [31.03.2019]          Initial Update v1.01 
-   `Black, Dark & Night are the true themes` */
+   [04.05.2019]          Initial Update v1.01 
+   `Black, Dark & Night - the only way to go` */
 
 :root {
     /* Side Icons */
@@ -52,59 +52,68 @@ ytd-page-manager > *.ytd-page-manager {
 /* New Scrollbar */
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
-background: #ddd;
-width: 14px;
-height: 14px;
+    background: #ddd;
+    width: 14px;
+    height: 14px;
 }
 ::-webkit-scrollbar-button {
-display: none;
+    display: none;
 }
 ::-webkit-scrollbar-thumb {
-background: #aaa;
+    background: #aaa;
 }
 ::-webkit-scrollbar-thumb:not(:active):hover {
-background: #afafaf;
+    background: #afafaf;
 }
 ::-webkit-scrollbar-thumb:active,
 ::-webkit-scrollbar-thumb:hover:active {
-background: #bbb;
+    background: #bbb;
 }
 [dark]::-webkit-scrollbar,
 [dark]::-webkit-scrollbar-corner,
 [dark] ::-webkit-scrollbar,
 [dark] ::-webkit-scrollbar-corner {
-background: #040406 !important;
+    background: #040406 !important;
 }
 [dark]::-webkit-scrollbar-button,
 [dark] ::-webkit-scrollbar-button {
-display: none;
+    display: none;
 }
 [dark]::-webkit-scrollbar-thumb,
 [dark] ::-webkit-scrollbar-thumb {
-background: #333;
+    background: #333;
 }
 [dark]::-webkit-scrollbar-thumb:not(:active):hover,
 [dark] ::-webkit-scrollbar-thumb:not(:active):hover {
-background: #383838;
+    background: #383838;
 }
 [dark]::-webkit-scrollbar-thumb:active,
 [dark]::-webkit-scrollbar-thumb:hover:active,
 [dark] ::-webkit-scrollbar-thumb:active,
 [dark] ::-webkit-scrollbar-thumb:hover:active {
-background: #5c5c5c;
+    background: #5c5c5c;
+}
+
+/* New Alternative Menu Bar on Left on MainPage */
+ytd-mini-guide-entry-renderer {
+    background-color: #000 !important;
+
+}
+ytd-mini-guide-renderer{
+    background-color: #000 !important;
 }
 
 /* Subbutton after Subscribed */
 paper-button.ytd-subscribe-button-renderer[subscribed] .deemphasize.yt-formatted-string,
 paper-button.ytd-subscribe-button-renderer[subscribed] {
-color: var(--yt-subscribe-button-text-color);
+    color: var(--yt-subscribe-button-text-color);
 }
 paper-button.ytd-subscribe-button-renderer[subscribed] {
-background-color: var(--SubscribeButtonAfterSub);
+    background-color: var(--SubscribeButtonAfterSub);
 }
 ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer {
-background-color: var(--SubscribeButtonAfterSub);
-color: var(--yt-subscribe-button-text-color);
+    background-color: var(--SubscribeButtonAfterSub);
+    color: var(--yt-subscribe-button-text-color);
 }
 
 /* Vars */
@@ -114,50 +123,50 @@ color: var(--yt-subscribe-button-text-color);
 
 /* Page Progress */
 yt-page-navigation-progress, #progress.yt-page-navigation-progress {
-height: 4px;
+    height: 4px;
 }
 yt-page-navigation-progress {
-background-color: transparent;
+    background-color: transparent;
 }
 
 /* Masterhead (YouTube upper navbar) */
 #container.ytd-masthead {
-height: 64px;
+    height: 64px;
 }
 ytd-searchbox.ytd-masthead {
-justify-content: center !important;
+    justify-content: center !important;
 }
 #search-form.ytd-searchbox {
-height: 38px;
-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-transition: box-shadow .2s var(--standard-curve);
+    height: 38px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow .2s var(--standard-curve);
 }
 [has-focus] #search-form.ytd-searchbox {
-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 }
 #container.ytd-searchbox,
 #search-icon-legacy.ytd-searchbox {
-background: var(--yt-searchbox-background) !important;
-border: none !important;
-border-radius: 0 !important;
-box-shadow: none !important;
+    background: var(--yt-searchbox-background) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 ytd-searchbox input {
-margin-left: 8px;
+    margin-left: 8px;
 }
 
 /* Guide */
 #header.ytd-app {
-height: 64px;
+    height: 64px;
 }
 
 /* Toggle  */
 .toggle-bar.paper-toggle-button {
-opacity: 0.3 !important;
+    opacity: 0.3 !important;
 }
 
 paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
-opacity: 0.7 !important;
+    opacity: 0.7 !important;
 }
 
 
@@ -463,5 +472,3 @@ ytd-author-comment-badge-renderer, yt-report-form-modal-renderer[dialog][dialog]
   background-color: var(none);
 }
 */
-
-
