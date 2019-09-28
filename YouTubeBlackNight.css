@@ -1,5 +1,5 @@
 /* Made & Compiled by Marcel "Luzkan" Jerzyk 
-   [04.05.2019]          Initial Update v1.01 
+   [28.09.2019]          Initial Update v1.02 
    `Black, Dark & Night - the only way to go` */
 
 :root {
@@ -101,6 +101,10 @@ ytd-mini-guide-entry-renderer {
 }
 ytd-mini-guide-renderer{
     background-color: #000 !important;
+}
+
+ytd-app[background-color-update_] #guide-content.ytd-app {
+    background: #000 !important;
 }
 
 /* Subbutton after Subscribed */
